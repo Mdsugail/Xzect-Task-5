@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: aliceblue;
+
+  }
+  header a{
+    text-decoration: none;
+     }
+     header{
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      background-color: blanchedalmond;
+     }
+  #brand{
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+     }
+
+    #brand a{
+      color: black;
+    } 
+    ul{
+      list-style: none;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    ul a{
+      color: black;
+    }
+    ul li{
+      padding: 5px;
+      margin-left: 10px;
+    }
+    #change,
+    #contact{
+      border-radius: 5px;
+      padding: 5px 8px;
+    }
+    #change{
+      background-color: #4CAF50;
+      color: white;      
+    }
+    #contact{
+      background-color: #f44336;
+      color: white;
+    }
+    
+</style>
+<body>
+
+
+
+
+
+
+  <header>
+    <div id="brand">GO docs</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a id="change" href="#">Changelog</a></li>
+        <li><a id="contact" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>

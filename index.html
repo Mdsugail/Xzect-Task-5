@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoDocs</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <!-- navbar section -->
+      <nav class="navbar"> 
+        <!-- hamburger menu -->
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          
+          <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Home</a></li>
+            <li><a class="menu__item" href="index.html">Github</a></li>
+            <li><a class="menu__item" href="#">Changelog</a></li>
+            <li><a class="menu__item" href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+         <!-- end -->
+        <img  class="icon" src="./icon.png" alt="">
+        <div class="logo">GoDocs</div>
+        
+        <ul class="nav">
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="index.html">Github</a></li>
+          <select name="lang" id="lang">
+            <option value="En">En</option>
+            <option value="Fr">Fr</option>
+          </select>
+        </ul>
+
+        <div class="navbtn">
+          <button class="changebt">Changelog</button>
+          <button class="contactbt">Contact</button>
+        </div>
+      </nav>
+    </header>
+    <!-- .......... Navbar End........ -->
+     <main class="main" >
+      
+      <div class="main-container">
+        <h1>Documentation <br><span style="color:  rgb(253, 32, 69);">Theme By</span> <br> Gethugothemes</h1>
+        <p>GoDocs is an open-source documentation generator for Go projects.<br> It is a command-line tool that generates documentation for projects<br> and any source from Go source code.</p>
+        <button class="getstarted">Get Started</button>
+          
+       <div class="search">
+        <form id="search-form">
+          <input type="text" id="search-box" placeholder="Search GoDocs..." />
+        </form> 
+        <!-- ....Pop-up..content... -->
+        <div class="popup-overlay"></div> 
+        <div class="pop-box">
+        <form id="popup-search">
+          <input type="text" id="search-box" placeholder="Search GoDocs..." /> <span  id="cancelbtn" class="ctrl1">ESC</span>
+        </form></div>
+        <!-- .....end of Pop-up... -->
+        </div> 
+      </div>
+      <img  class="mainimg" src="./main.webp" alt="">
+      <!-- ....animation... -->
+      <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+</div >
+ </main>
+
+      <!-- .... content section...... -->
+       <section class="card-content">
+        <h1>Browse Your Topics</h1>
+        <div class="card-container">
+
+          <div class="card" id="card1">
+            <img id="card-icon" src="./adjust2.png" alt="">
+             <h2>Basic Startup</h2> 
+             <p style="color: #706c6c;">GoDocs simplifies the task of creating comprehensive documentation for your Go projects GoDocs makes it easy to document and share your codebase.</p>  
+        </div>
+
+        <div class="card" id="card1">
+          <img id="card-icon" src="./shopping.png" alt="">
+           <h2>Easy Integration</h2> 
+           <p style="color: #706c6c;">lnstall GoDocs via command line, point it to your project directory, and it handles the rest  and extensive configuration options, customization is straightforward.</p>  
+      </div>
+
+      <div class="card" id="card1">
+        <img id="card-icon" src="./comment.png" alt="">
+         <h2>Key Features</h2> 
+         <p style="color: #706c6c;">GoDocs automates API reference generation, offers customizable themes, and seamlessly integrates with your development environment, ensuring your documentation</p>  
+    </div>
+
+    <div class="card" id="card1">
+      <img id="card-icon" src="./_tools_settings_icon.png" alt="">
+       <h2>Customizable Themes</h2> 
+       <p style="color: #706c6c;">Personalize your documentation with clean, minimalistic layouts or vibrant designs tailored to your project's needs.</p>  
+  </div>
+        </div>
+       </section>
+       <!--...........card section end........ -->
+
+       <!-- ..........content section.... -->
+        <section class="content-container">
+          <h1>Mostly Asked Questions</h1>
+          <div class="contents">
+            <div class="content">
+              <h2>Will updates also be free ?</h2>
+              <p >Absolutely! Updates to GoDocs are provided free of charge as part of our commitment to continuously enhance the functionality and features of the tool. We believe in keeping our users equipped with the latest improvements, bug fixes, and new features without any additional cost.to create engaging content that highlights the strengths and appeal of GoDocs for potential users and contributors to your frontend project!</p>           
+          </div>
+
+          <div class="content">
+            <h2>Is there any documentation and support?</h2>
+            <p>Yes, GoDocs comes with comprehensive documentation to assist you at every stage of using the tool. Our documentation covers installation instructions, configuration options, customization guides, and integration tips, ensuring you can leverage GoDocs efficiently and effectively. Additionally, we offer dedicated support to address any queries or issues you may encounter. Our support team is responsive and committed to helping you maximize your experience with GoDocs</p>           
+          </div>
+          <div class="content">
+             <h2>What is a product key?</h2>
+             <p>In the context of GoDocs, a product key typically refers to a unique identifier used for licensing purposes or accessing premium features. However, GoDocs is open-source and does not require a product key for basic usage. You can freely download, install, and use GoDocs without any restrictions. We aim to keep the tool accessible and straightforward for all users, ensuring you can generate documentation seamlessly from your Go projects</p>           
+          </div>
+          <div class="content">
+            <h2>Automatic API Reference?</h2>
+            <p>GoDocs simplifies the process of generating API references automatically from your Go source code. By analyzing your codebase, GoDocs extracts and organizes relevant information about functions, methods, packages, and more into structured documentation. This feature saves you time and effort, ensuring your documentation remains up-to-date and synchronized with your project's codebase automatically.</p>           
+          </div>
+          <div class="content">
+             <h2>Community & Support?</h2>
+             <p>Join the GoDocs community today and become part of a thriving network focused on support and collaboration. Whether you're seeking assistance, have questions, or are eager to contribute to our project, our community stands ready. Visit our GitHub repository where you can report issues, suggest new features, and contribute code and improvements. Connect with fellow Go developers to exchange insights and experiences.Together, let's make GoDocs even better for everyone!</p>           
+          </div>
+          <div class="content">
+            <h2> Usage?</h2>
+            <p>Discover how easy it is to create comprehensive documentation for your project using GoDocs. Simply navigate to your Go project directory in the terminal and execute the command godocs generate. GoDocs will swiftly scan your source code, utilizing your comments and structure to generate documentation. Once complete, access your documentation in the specified output format and location. With GoDocs, documenting your Go projects is streamlined and efficient.</p>           
+        </div></div>
+        </section>
+                           <!--...........content section end........ -->
+                          <!-- ............side content........ -->
+                          <div class="full-side">
+                            <section class="side-content">
+                             <img class="sideimg" src="./sideimg.webp" alt="">
+                             <div class="side-contents">
+                               <h1>Still Didn't Find Your Answer?</h1>
+                               <p>If you still have questions or need assistance, feel free to reach out to our dedicated support team. Our team is available 24/7 to assist you with any queries or issues you may encounter. We're here to help, and we look forward to hearing from you!</p>
+                               <button class="contactbtn">Submit  A Ticket</button>
+                             </div>
+                             
+                            </section>
+                            
+                           </div>
+        <!-- ...........Footer....... -->
+        
+          <div class="footer-content">
+          <div class="footer-name">
+            <ul class="footer-ul">
+              <li class="footer-li" ><a class="footer-a"  href="">Changelog</a></li>
+              <li class="footer-li"><a  class="footer-a" href="">Contact</a></li>
+              <li class="footer-li"><a  class="footer-a" href="">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="footer-logo">
+            <img  class="icon-footer" src="./icon.png" alt="">
+            <div class="logo-footer">GoDocs</div>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li><a href=""><i style="color: antiquewhite;" class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i style="color: antiquewhite;" class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i style="color: antiquewhite;" class="fa-brands fa-github"></i></a></li>
+              <li><a href=""><i style="color: antiquewhite;" class="fa-brands fa-linkedin"></i></a></li>
+            </ul>    
+            </div>
+        </div>
+        
+        <div class="copy">
+              <div class="copy-content"></div>
+                <p class="copy-p">Copyright © 2024 GoDocs. All rights reserved.</p>
+              
+            </div>
+
+          </div>
+  </body>
+  <script>
+    var popupoverlay = document.querySelector(".popup-overlay")
+    var popbox = document.querySelector(".pop-box")
+    var click = document.getElementById("search-box")
+
+    click.addEventListener("click", function() {
+      popupoverlay.style.display = "block";
+      popbox.style.display = "block";
+    });
+    
+
+    var cancelbutton = document.getElementById("cancelbtn")
+    cancelbutton.addEventListener("click", function() {
+      popupoverlay.style.display = "none";
+      popbox.style.display = "none";
+    });
+    
+    document.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        popupoverlay.style.display = "none";
+        popbox.style.display = "none";
+      }
+    });
+    
+
+
+    </script>
+</html>
